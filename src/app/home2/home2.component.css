@@ -1,0 +1,52 @@
+body {
+  background-image: linear-gradient(red, yellow);
+}
+
+button {
+  margin: 20px;
+  margin-left: 210px;
+  background-color: #28a745; /* Changed to a green color */
+  border-color: #28a745; /* Changed to match the button color */
+  color: #fff; /* Set text color to white */
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+select {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.div {
+  margin-top: 150px;
+  margin-left: 33%;
+  width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+label {
+  padding-left: 20px; /* Adjusted padding for better alignment */
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  background-color: #48ca66;
+}

@@ -1,0 +1,24 @@
+form {
+  width: 900px;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+h2 {
+  text-align: center;
+
+  font-weight: bold;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button {
+  margin: 20px;
+  margin-left: 400px;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+button:hover {
+  background-color: #48ca66;
+}

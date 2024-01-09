@@ -1,0 +1,21 @@
+<div class="div">
+  <form #ajoutForm="ngForm" (ngSubmit)="goToConn(ajoutForm.value)">
+    <div class="form-group">
+      <label for="exampleInputEmail1" i18n>
+        <i class="fas fa-wallet"></i> Wallet</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter phone number"
+        name="phone"
+        ngModel
+        placeholder="wallet number"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" i18n>Submit</button>
+  </form>
+</div>

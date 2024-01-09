@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(red, yellow);
+}
+
+button {
+  margin: 20px;
+  margin-left: 210px;
+  background-color: #28a745;
+  border-color: #28a745;
+  border: #28a745;
+}
+
+input {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+select {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.div {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.label {
+  padding-left: 115px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.form-check-input {
+  width: 15px;
+  height: 15px;
+  margin-left: 155px;
+}
+.form-check-label {
+  width: 200px;
+  margin-top: 14px;
+  margin-left: 180px;
+}

@@ -1,0 +1,43 @@
+<h2 i18n>Client Info</h2>
+<div class="center-table">
+  <table class="table">
+    <tr>
+      <th scope="col" i18n>Title(Mr/Miss)</th>
+      <th scope="col" i18n>Name</th>
+      <th scope="col" i18n>Type of identity card</th>
+      <th scope="col" i18n>Emission Country</th>
+      <th scope="col" i18n>N ID Card</th>
+      <th scope="col" i18n>Date of Birth</th>
+      <th scope="col" i18n>Profession</th>
+      <th scope="col" i18n>Country Nationality</th>
+      <th scope="col" i18n>Adresse</th>
+      <th scope="col" i18n>City</th>
+      <th scope="col" i18n>GSM</th>
+      <th scope="col" i18n>Email</th>
+    </tr>
+    <tr>
+      <td>{{ client.gender }}</td>
+      <td>{{ client.firstname }} {{ client.lastname }}</td>
+      <td>{{ client.identityType }}</td>
+      <td>{{ client.emissionCountry }}</td>
+      <td>{{ client.identityNumber }}</td>
+      <td>{{ client.birthdayDate }}</td>
+      <td>{{ client.occupation }}</td>
+      <td>{{ client.nationality }}</td>
+      <td>{{ client.address }}</td>
+      <td>{{ client.city }}</td>
+      <td>{{ client.phoneNumber }}</td>
+      <td>{{ client.email }}</td>
+    </tr>
+  </table>
+</div>
+<button
+  type="submit"
+  class="btn button"
+  data-bs-toggle="modal"
+  data-bs-target="#form_number"
+  (click)="goToConn()"
+  i18n
+>
+  Next
+</button>

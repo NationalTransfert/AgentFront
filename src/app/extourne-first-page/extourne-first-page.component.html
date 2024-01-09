@@ -1,0 +1,135 @@
+<div class="div">
+  <form #ajoutForm="ngForm" (ngSubmit)="goToConn(ajoutForm.value)">
+    <div class="form-group">
+      <label class="label" for="exampleInputEmail1" i18n
+        ><i class="fas fa-receipt"></i> Enter Reference</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter phone number"
+        name="phone"
+        ngModel
+        placeholder="Number"
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      i18n
+    >
+      Submit
+    </button>
+  </form>
+</div>
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" i18n>
+          Transaction Information
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <div class="mb-3">
+            <label for="pet-select">Id</label>
+            <label
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              name="id"
+              ngModel
+            >
+              {{ transactionData?.ID }}</label
+            >
+          </div>
+          <div class="mb-3">
+            <label for="pet-select" i18n>FullName</label>
+            <label
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              name="fullname"
+              ngModel
+              >{{ transactionData?.FullName }}</label
+            >
+          </div>
+          <div class="mb-3">
+            <label for="pet-select" i18n>Emissiom Date</label>
+            <label
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              name="emissiondate"
+              ngModel
+              >{{ transactionData?.creationDate }}</label
+            >
+          </div>
+          <div class="mb-3">
+            <label for="pet-select" i18n>Balance</label>
+            <label
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              name="balance"
+              ngModel
+              >{{ transactionData?.amount }}</label
+            >
+          </div>
+          <div class="mb-3">
+            <label for="pet-select" i18n>Beneficiary FullName</label>
+            <label
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              name="destination"
+              ngModel
+              >{{ transactionData?.beneficiary }}</label
+            >
+          </div>
+          <div class="mb-3">
+            <label for="pet-select" i18n>Status</label>
+            <label
+              type="text"
+              class="form-control"
+              id="Status"
+              name="destination"
+              ngModel
+              >{{ transactionData?.status }}</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          *ngIf="transactionData?.status === 'to serve'"
+          (click)="goTo()"
+          type="button"
+          class="btn2 btn-secondary"
+          class="btn btn-primary"
+          i18n
+        >
+          Extourne
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

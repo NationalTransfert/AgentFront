@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(red, yellow);
+}
+
+button {
+  margin: 20px;
+  margin-left: 210px;
+  background-color: #28a745;
+  border-color: #28a745;
+  border: #28a745;
+}
+
+input {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+select {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border-radius: 20px;
+}
+label {
+  padding-left: 190px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

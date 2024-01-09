@@ -1,0 +1,37 @@
+<div class="div">
+  <form #ajoutForm="ngForm" (ngSubmit)="goToConn(ajoutForm.value)">
+    <div class="form-group" style="display: flex; flex-direction: column">
+      <label for="exampleInputEmail1" i18n style="text-align: center"
+        ><i class="far fa-address-card"></i> Account</label
+      >
+
+      <select
+        class="form-select"
+        style="margin-bottom: 20px"
+        aria-label="Default select example"
+        name="selectbene"
+        name="ID"
+        [(ngModel)]="select"
+      >
+        <option value="0" [ngValue]="undefined" disabled="disabled" i18n>
+          ID Card
+        </option>
+        <option value="1" selected i18n>CIN</option>
+        <option value="2" i18n>Passport</option>
+      </select>
+
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter card ID"
+        name="phone"
+        ngModel
+        placeholder="Number"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" i18n>Search</button>
+  </form>
+</div>

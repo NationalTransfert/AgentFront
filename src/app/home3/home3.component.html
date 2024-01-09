@@ -1,0 +1,22 @@
+<div class="div">
+  <form #ajoutForm="ngForm" (ngSubmit)="goToConn(ajoutForm.value)">
+    <div class="form-group">
+      <label for="exampleInputEmail1" i18n
+        ><i class="fas fa-receipt"></i> Enter Reference</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter Transfer Reference"
+        name="Reference"
+        ngModel
+        placeholder="Number"
+        i18n
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" i18n>Submit</button>
+  </form>
+</div>

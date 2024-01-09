@@ -1,0 +1,42 @@
+<h2 i18n>Transaction Information</h2>
+<div class="center-table">
+  <table class="table" style="width: 500px">
+    <thead>
+      <tr>
+        <th scope="col" i18n>ID</th>
+        <th scope="row" i18n>FullName</th>
+        <th scope="row" i18n>Emissiom Date</th>
+        <th scope="row" i18n>Amount</th>
+        <th scope="row" i18n>Beneficiary FullName</th>
+        <th scope="row" i18n>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: white">
+        <td>{{ transactionData?.ID }}</td>
+        <td>{{ transactionData?.FullName }}</td>
+        <td>{{ transactionData?.creationDate }}</td>
+        <td>{{ transactionData?.amount }}</td>
+        <td>
+          {{ transactionData?.beneficiary }}
+        </td>
+        <td>
+          {{ transactionData?.status }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="dev">
+  <button
+    *ngIf="transactionData?.status === 'to serve'"
+    class="btn button"
+    (click)="serve_by_cash()"
+    i18n
+  >
+    Serve by cash
+  </button>
+  <!-- <button class="btn button" (click)="serve_by_wallet()" i18n>
+    Serve by wallet
+  </button>  -->
+</div>
